@@ -61,7 +61,6 @@ export function Footer() {
       </div>
 
       <div className="relative">
-        <h1 className="text-[15vw] font-serif leading-none tracking-tighter opacity-10 select-none">D'SEMUTEN</h1>
         <div className="flex flex-col md:flex-row justify-between items-center px-4 py-8 border-t border-background/10 text-xs tracking-widest text-background/40 font-bold">
           <p>© 2025 KAMPUNG KOPYOR D'SEMUTEN. ALL RIGHTS RESERVED.</p>
           <div className="flex gap-8 mt-4 md:mt-0 uppercase">
