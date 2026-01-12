@@ -87,13 +87,6 @@ export function AchievementsSection() {
                 </button>
               ))}
             </div>
-
-            <div className="mt-24 p-12 bg-accent/20 rounded-[3rem] text-center">
-              <h3 className="font-serif text-4xl mb-6">Is your brand ready for the taste of heritage?</h3>
-              <button className="bg-foreground text-background px-12 py-5 rounded-full font-medium hover:bg-primary transition-colors uppercase tracking-widest text-sm shadow-xl">
-                Partner With Us
-              </button>
-            </div>
           </>
         )}
       </div>
