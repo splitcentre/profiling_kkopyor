@@ -9,28 +9,24 @@ export function HistorySection() {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img
-                src="/vintage-farming-village-indonesia.jpg"
+                src="Photoshoot/kkopyor1.jpg"
                 alt="Our History"
                 className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
               />
-              <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-accent rounded-full flex items-center justify-center p-6 text-center text-sm font-serif italic text-accent-foreground leading-tight hidden md:flex">
+              {/* <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-accent rounded-full flex items-center justify-center p-6 text-center text-sm font-serif italic text-accent-foreground leading-tight hidden md:flex">
                 Established since the early generations of Kampung D'Semuten
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">Our Origin</span>
-            <h2 className="font-serif text-5xl md:text-7xl mb-8 leading-tight">A Legacy Rooted in the Soil.</h2>
+            <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">Sejarah</span>
+            <h2 className="font-serif text-5xl md:text-7xl mb-8 leading-tight">Perkebunan Kopyor.</h2>
             <div className="space-y-6 text-lg font-light leading-relaxed text-foreground/80">
               <p>
-                Kampung Kelapa Kopyor D'Semuten began as a small cluster of family farms dedicated to nurturing the
-                rarest variety of coconut—the Kopyor. What started as a local necessity evolved into a regional
-                landmark.
+                Kampung Kelapa Kopyor D'Semuten merupakan Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae temporibus dolorem fuga perspiciatis quod neque ipsam dolorum. Voluptatum et commodi consequuntur, sequi tempore accusantium nisi architecto, voluptatem sint mollitia autem!
               </p>
               <p>
-                Through decades of careful cultivation and knowledge passed down through generations, we have perfected
-                the art of Kopyor farming, ensuring that every tree tells a story of patience, respect for nature, and
-                community spirit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, esse, eos quae qui tempore iusto repellat quos autem veritatis necessitatibus, eligendi nemo! Aliquid optio suscipit, reiciendis possimus est fugit ex.
               </p>
             </div>
             <Link

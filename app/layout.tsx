@@ -8,17 +8,16 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Profiling Kampung Kelapa Kopyor D'Semuten",
-  description: "A branding site for the rare Kopyor coconut heritage of Kampung D'Semuten.",
-  generator: "v0.app",
+  title: "D'Semuten",
+  description: "Site For Kmapung Kopyor Profile.",
   icons: {
     icon: [
       {
-        url: "/coconut.png",
+        url: "Logo/logo.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/coconut.png",
+        url: "Logo/logo.png",
         media: "(prefers-color-scheme: dark)",
       }
     ],

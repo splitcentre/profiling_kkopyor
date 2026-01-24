@@ -5,26 +5,10 @@ import { X } from "lucide-react"
 
 const team = [
   {
-    name: "Pak Sudarmo",
-    role: "Lead Cultivator",
-    bio: "With over 40 years of experience, he is the heart of our plantation knowledge.",
-    image: "/portrait-of-elderly-indonesian-farmer.jpg",
-    fullProfile:
-      "Pak Sudarmo has dedicated his entire life to the art of coconut cultivation. His wisdom, passed down through generations, combines traditional methods with modern sustainability. He mentors younger farmers and ensures every palm receives the care it deserves, treating each tree as a testament to our heritage.",
-  },
-  {
-    name: "Ibu Ratna",
-    role: "Community Director",
-    bio: "Pioneering sustainable practices and empowerment for local women in D'Semuten.",
-    image: "/portrait-of-smiling-indonesian-woman-farmer.jpg",
-    fullProfile:
-      "Ibu Ratna is a driving force behind our community's growth. She champions sustainable practices and has created programs that empower local women, providing them with skills and opportunities. Her vision extends beyond agriculture—she believes in building a thriving, equitable community where everyone shares in our success.",
-  },
-  {
     name: "Aris Wijaya",
     role: "Innovation Lead",
     bio: "Merging modern irrigation techniques with traditional organic farming methods.",
-    image: "/young-indonesian-agronomist-portrait.jpg",
+    image: "/Photoshoot/iwan.jpg",
     fullProfile:
       "Aris brings fresh perspectives to our plantation through innovative agronomic techniques. He seamlessly bridges traditional organic farming with modern irrigation systems, ensuring our methods are both time-honored and future-ready. His research has significantly improved yield quality while maintaining our environmental commitment.",
   },
@@ -86,13 +70,9 @@ export function PeopleSection() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl">
-            <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">The Guardians</span>
-            <h2 className="font-serif text-5xl md:text-7xl leading-tight">People Behind the Palms.</h2>
+            <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">Pengurus</span>
+            <h2 className="font-serif text-5xl md:text-7xl leading-tight">Pengurus Kampung Kopyor.</h2>
           </div>
-          <p className="max-w-md text-background/60 text-lg leading-relaxed">
-            Our community is built on the hard work of dedicated individuals who treat every tree as a member of the
-            family.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">

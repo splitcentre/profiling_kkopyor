@@ -21,7 +21,7 @@ export default function HistoryPage() {
             <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">
               The Full Chronicle
             </span>
-            <h1 className="font-serif text-5xl md:text-8xl mb-8 leading-tight">A Legacy Through Generations</h1>
+          
             <p className="text-xl md:text-2xl font-serif italic text-foreground/60 leading-relaxed">
               Tracing the roots of Kampung Kelapa Kopyor D'Semuten from its humble beginnings to a regional heritage.
             </p>

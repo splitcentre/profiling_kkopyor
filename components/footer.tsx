@@ -63,10 +63,10 @@ export function Footer() {
       <div className="relative">
         <div className="flex flex-col md:flex-row justify-between items-center px-4 py-8 border-t border-background/10 text-xs tracking-widest text-background/40 font-bold">
           <p>© 2025 KAMPUNG KOPYOR D'SEMUTEN. ALL RIGHTS RESERVED.</p>
-          <div className="flex gap-8 mt-4 md:mt-0 uppercase">
+          {/* <div className="flex gap-8 mt-4 md:mt-0 uppercase">
             <span className="cursor-pointer hover:text-white transition-colors">Privacy Policy</span>
             <span className="cursor-pointer hover:text-white transition-colors">Terms of Use</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
