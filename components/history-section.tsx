@@ -19,21 +19,18 @@ export function HistorySection() {
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">Sejarah</span>
+            <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">Tentang Kampung Kopyor</span>
             <h2 className="font-serif text-5xl md:text-7xl mb-8 leading-tight">Perkebunan Kopyor.</h2>
             <div className="space-y-6 text-lg font-light leading-relaxed text-foreground/80">
               <p>
-                Kampung Kelapa Kopyor D'Semuten merupakan Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae temporibus dolorem fuga perspiciatis quod neque ipsam dolorum. Voluptatum et commodi consequuntur, sequi tempore accusantium nisi architecto, voluptatem sint mollitia autem!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, esse, eos quae qui tempore iusto repellat quos autem veritatis necessitatibus, eligendi nemo! Aliquid optio suscipit, reiciendis possimus est fugit ex.
+                Kampung Kopyor merupakan sentra budidaya dan destinasi eduwisata unggulan di Dusun Semuten, Jatimulyo, Bantul, yang mengintegrasikan teknologi modern kultur embrio dengan pemberdayaan petani muda untuk menghasilkan kelapa kopyor berkualitas tinggi sebagai penggerak ekonomi kreatif desa.
               </p>
             </div>
             <Link
               href="/history"
               className="mt-12 group inline-flex items-center gap-3 font-serif italic text-2xl hover:text-primary transition-colors"
             >
-              Read our full story <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+              Informasi Lebih Lanjut <ArrowRight className="group-hover:translate-x-2 transition-transform" />
             </Link>
           </div>
         </div>

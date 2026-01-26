@@ -1,72 +1,120 @@
-import { Instagram, Linkedin, Twitter, Facebook } from "lucide-react"
+import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-foreground text-background pt-24 pb-12 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20 mb-20">
-        <div>
-          <h2 className="font-serif text-5xl md:text-7xl mb-12 leading-tight">Get in touch.</h2>
-          <p className="text-xl text-background/60 mb-8 max-w-md font-light leading-relaxed">
-            Whether you are looking for partnerships, tours, or high-quality Kopyor supply, we'd love to hear from you.
+    <footer id="contact" className="bg-primary text-primary-foreground pt-24 pb-12 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="mb-16 text-center">
+          <h1 className="font-serif text-5xl md:text-6xl mb-4 text-balance">Temukan Kami</h1>
+          <p className="text-xl text-primary-foreground/70">
+            Kunjungi Kampung Kelapa Kopyor D'Semuten
+          </p>
+        </div>
+
+        {/* Main Content Grid */}
+        <div className="grid md:grid-cols-2 gap-12 mb-16">
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h2 className="font-serif text-3xl mb-8">Get in Touch</h2>
+
+              {/* Location */}
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-primary-foreground mt-1" />
+                </div>
+                <div>
+                  <h3 className="font-medium text-lg mb-1">Location</h3>
+                  <p className="text-primary-foreground/70">
+                    Kampung Kelapa Kopyor D'Semuten<br />
+                    Semuten, Jatimulyo, Dlingo, Bantul Regency, Special Region of Yogyakarta 55783
+                  </p>
+                </div>
+              </div>
+
+              {/* Phone */}
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0">
+                  <Phone className="w-6 h-6 text-primary-foreground mt-1" />
+                </div>
+                <div>
+                  <h3 className="font-medium text-lg mb-1">Phone</h3>
+                  <a href="tel:+62XXX" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    +62 (XXX) XXX-XXXX
+                  </a>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0">
+                  <Mail className="w-6 h-6 text-primary-foreground mt-1" />
+                </div>
+                <div>
+                  <h3 className="font-medium text-lg mb-1">Email</h3>
+                  <a href="mailto:hello@dsemuten.com" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    hello@dsemuten.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Hours */}
+              <div className="flex gap-4 items-start">
+                <div className="flex-shrink-0">
+                  <Clock className="w-6 h-6 text-primary-foreground mt-1" />
+                </div>
+                <div>
+                  <h3 className="font-medium text-lg mb-1">Jam Kunjungan</h3>
+                  <p className="text-primary-foreground/70">
+                    Senin - Jumat: 9:00 - 17:00 <br />
+                    Sabtu: 10:00 - 15:00<br />
+                    Minggu: Tutup
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Map Section */}
+          <div className="space-y-4">
+            <h2 className="font-serif text-3xl">Location Map</h2>
+            <div className="bg-primary-foreground/20 rounded-2xl overflow-hidden h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4265.948434923559!2d110.4716199829106!3d-7.90125456456618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a53d4fe056591%3A0x1c867bca41c81997!2sKampung%20Kopyor%20Jogja!5e1!3m2!1sen!2sid!4v1769255125174!5m2!1sen!2sid"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </div>
+        </div>
+
+
+        {/* CTA Section */}
+        <div className="text-center mb-20">
+          <h2 className="font-serif text-3xl mb-6">Ingin Berkunjung?</h2>
+          <p className="text-lg text-primary-foreground/70 mb-8 max-w-2xl mx-auto">
+            Hubungi kami hari ini untuk mengatur kunjungan Anda ke Kampung Kelapa Kopyor D'Semuten.
           </p>
           <a
             href="mailto:hello@dsemuten.com"
-            className="text-3xl font-serif italic border-b border-background/20 pb-2 hover:text-primary hover:border-primary transition-all"
+            className="inline-block bg-primary-foreground text-primary px-10 py-4 rounded-full font-medium hover:bg-primary-foreground/90 transition-colors uppercase tracking-widest text-sm"
           >
-            hello@dsemuten.com
+            Hubungi Kami
           </a>
-
-          <div className="flex gap-6 mt-12">
-            <Instagram className="hover:text-primary cursor-pointer" />
-            <Linkedin className="hover:text-primary cursor-pointer" />
-            <Twitter className="hover:text-primary cursor-pointer" />
-            <Facebook className="hover:text-primary cursor-pointer" />
-          </div>
         </div>
 
-        <div className="space-y-8">
-          <div className="grid grid-cols-2 gap-8 text-sm uppercase tracking-widest font-bold">
-            <div>
-              <p className="text-primary mb-4">Location</p>
-              <p className="text-background/60 font-medium">
-                Kampung D'Semuten
-                <br />
-                Central Java, Indonesia
-              </p>
-            </div>
-            <div>
-              <p className="text-primary mb-4">Inquiries</p>
-              <p className="text-background/60 font-medium">
-                +62 21 555 0123
-                <br />
-                info@dsemuten.id
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-background/5 p-10 rounded-3xl border border-background/10">
-            <p className="uppercase tracking-[0.2em] text-xs font-bold text-primary mb-6">Join our newsletter</p>
-            <form className="flex gap-4">
-              <input
-                type="email"
-                placeholder="Enter email"
-                className="bg-transparent border-b border-background/20 py-2 flex-1 focus:outline-none focus:border-primary transition-colors"
-              />
-              <button className="bg-primary text-primary-foreground px-6 py-2 rounded-full uppercase tracking-widest text-[10px] font-black">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative">
-        <div className="flex flex-col md:flex-row justify-between items-center px-4 py-8 border-t border-background/10 text-xs tracking-widest text-background/40 font-bold">
+        {/* Copyright */}
+        <div className="flex flex-col md:flex-row justify-between items-center px-4 py-8 border-t border-primary-foreground/10 text-xs tracking-widest text-primary-foreground/40 font-bold">
           <p>© 2025 KAMPUNG KOPYOR D'SEMUTEN. ALL RIGHTS RESERVED.</p>
-          {/* <div className="flex gap-8 mt-4 md:mt-0 uppercase">
-            <span className="cursor-pointer hover:text-white transition-colors">Privacy Policy</span>
-            <span className="cursor-pointer hover:text-white transition-colors">Terms of Use</span>
-          </div> */}
+          <div className="flex gap-8 mt-4 md:mt-0 uppercase">
+            <span className="cursor-pointer hover:text-primary-foreground transition-colors">Privacy Policy</span>
+            <span className="cursor-pointer hover:text-primary-foreground transition-colors">Terms of Use</span>
+          </div>
         </div>
       </div>
     </footer>

@@ -15,7 +15,7 @@ const marketplaces = [
     name: "Shopee",
     description: "Link untuk Official Shopee",
     url: "https://shopee.co.id",
-    color: "bg-[#ee4d2d]",
+    color: "bg-[#FF9F8C]",
     logo: "/Logo/shopee.png",
   },
   {
@@ -37,14 +37,13 @@ export default function ProductsPage() {
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-6">
               <ShoppingBag size={14} />
-              Our Marketplace
+              Marketplace Kami
             </div>
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tighter mb-8 leading-[0.9]">
-              Explore Our <br /> <span className="italic text-primary">Products</span>
+              Jelajahi <br /> <span className="italic text-primary">Produk Kami</span>
             </h1>
             <p className="max-w-2xl mx-auto text-xl text-muted-foreground font-light leading-relaxed">
-              Bring the unique taste of D'Semuten's Kopyor Coconuts to your doorstep. Find our official products across
-              major Indonesian marketplaces.
+              Temukan produk resmi kami di berbagai marketplace Indonesia terkemuka.
             </p>
           </div>
 

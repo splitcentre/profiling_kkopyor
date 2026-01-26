@@ -3,33 +3,47 @@
 import React from "react"
 
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { useRouter, usePathname } from "next/navigation"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
+  const pathname = usePathname()
 
   const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
-    router.push("/")
-    setTimeout(() => {
+    if (pathname === "/") {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       })
-    }, 0)
+    } else {
+      router.push("/")
+    }
   }
 
   const handleSectionScroll = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault()
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
+    
+    const scrollToSection = () => {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        })
+      } else {
+        console.log("[v0] Section not found:", sectionId)
+      }
+    }
+
+    if (pathname === "/") {
+      scrollToSection()
+    } else {
+      router.push("/")
+      setTimeout(scrollToSection, 500)
     }
   }
 
@@ -45,10 +59,10 @@ export function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8 uppercase text-sm tracking-widest font-medium">
               <a href="#history" onClick={(e) => handleSectionScroll(e, "history")} className="hover:text-primary transition-colors cursor-pointer">
-                Sejarah
+                Tentang Kampung Kopyor
               </a>
               <a href="#people" onClick={(e) => handleSectionScroll(e, "people")} className="hover:text-primary transition-colors cursor-pointer">
-                Orang
+                Pengurus
               </a>
               <a href="#achievements" onClick={(e) => handleSectionScroll(e, "achievements")} className="hover:text-primary transition-colors cursor-pointer">
                 Prestasi
@@ -56,11 +70,8 @@ export function Navbar() {
               <Link href="/products" className="hover:text-primary transition-colors">
                 Produk
               </Link>
-              <Link href="/find-us" className="hover:text-primary transition-colors">
-                Temukan Kami
-              </Link>
               <a href="#contact" onClick={(e) => handleSectionScroll(e, "contact")} className="hover:text-primary transition-colors cursor-pointer">
-                Kontak
+                Find Us
               </a>
             </div>
           </div>
@@ -76,10 +87,10 @@ export function Navbar() {
         <div className="md:hidden bg-background border-b animate-in fade-in slide-in-from-top-4">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center py-8">
             <a href="#history" onClick={(e) => { handleSectionScroll(e, "history"); setIsOpen(false) }} className="block px-3 py-4 text-lg font-serif cursor-pointer">
-              Sejarah
+              Tentang Kampung Kopyor
             </a>
             <a href="#people" onClick={(e) => { handleSectionScroll(e, "people"); setIsOpen(false) }} className="block px-3 py-4 text-lg font-serif cursor-pointer">
-              Orang
+              Pengurus
             </a>
             <a href="#achievements" onClick={(e) => { handleSectionScroll(e, "achievements"); setIsOpen(false) }} className="block px-3 py-4 text-lg font-serif cursor-pointer">
               Prestasi
@@ -87,11 +98,8 @@ export function Navbar() {
             <Link href="/products" className="block px-3 py-4 text-lg font-serif" onClick={() => setIsOpen(false)}>
               Produk
             </Link>
-            <Link href="/find-us" className="block px-3 py-4 text-lg font-serif" onClick={() => setIsOpen(false)}>
-              Temukan Kami
-            </Link>
             <a href="#contact" onClick={(e) => { handleSectionScroll(e, "contact"); setIsOpen(false) }} className="block px-3 py-4 text-lg font-serif cursor-pointer">
-              Kontak
+              Find Us
             </a>
           </div>
         </div>

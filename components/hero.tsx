@@ -24,10 +24,10 @@ export function Hero() {
       <div className="absolute bottom-10 left-0 w-full overflow-hidden border-y border-foreground/10 py-4">
         <div className="flex animate-marquee whitespace-nowrap gap-12 text-sm uppercase tracking-[0.3em] font-medium opacity-50">
           <span>
-            +++ HERITAGE +++ SUSTAINABILITY +++ COMMUNITY +++ EXCELLENCE +++ INNOVATION +++ KAMPUNG KOPYOR +++
+            +++ SUKUN +++ PISANG +++ KELAPA KOPYOR +++ TALAS +++ KAMPUNG KOPYOR +++
           </span>
           <span>
-            +++ HERITAGE +++ SUSTAINABILITY +++ COMMUNITY +++ EXCELLENCE +++ INNOVATION +++ KAMPUNG KOPYOR +++
+            +++ SUKUN +++ PISANG +++ KELAPA KOPYOR +++ TALAS +++ KAMPUNG KOPYOR +++
           </span>
         </div>
       </div>

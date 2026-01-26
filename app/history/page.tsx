@@ -19,64 +19,52 @@ export default function HistoryPage() {
 
           <header className="mb-16">
             <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">
-              The Full Chronicle
+              Sejarah
             </span>
           
             <p className="text-xl md:text-2xl font-serif italic text-foreground/60 leading-relaxed">
-              Tracing the roots of Kampung Kelapa Kopyor D'Semuten from its humble beginnings to a regional heritage.
+              Menelusuri transformasi Kampung Kopyor Semuten dari potensi lokal menjadi pusat inovasi teknologi dan eduwisata di Bantul.
             </p>
           </header>
 
           <div className="prose prose-lg dark:prose-invert max-w-none space-y-12 font-light leading-relaxed text-foreground/80">
             <section className="space-y-6">
-              <h2 className="font-serif text-3xl text-foreground">The Early Seeds (1950s - 1970s)</h2>
+              <h2 className="font-serif text-3xl text-foreground">Awal Mula & Visi Lokal (2023 - 2024)</h2>
               <p>
-                The story of D'Semuten began in the post-independence era, when the elders of the village discovered a
-                peculiar anomaly in their coconut harvest. While most trees produced standard coconuts, a select few
-                yielded what we now know as 'Kopyor'—a natural genetic mutation where the meat is soft, crumbly, and
-                detached from the shell.
+                Perjalanan Kampung Kopyor Semuten berakar dari keberadaan pohon indukan kelapa kopyor lokal yang telah lama tumbuh di tanah Jatimulyo. Menyadari nilai ekonomi yang luar biasa, Pemerintah Kalurahan Jatimulyo bersama Kelompok Taruna Tani "Rukun Lestari" menginisiasi langkah besar dengan mengalokasikan dana APBKal untuk pembibitan massal varietas lokal guna memberdayakan ekonomi warga.
               </p>
               <div className="my-12">
                 <img
-                  src="/vintage-farming-village-indonesia.jpg"
-                  alt="Traditional farming practices"
+                  src="/kampung-kopyor-semuten.jpg" 
+                  alt="Budidaya Kelapa Kopyor Semuten"
                   className="w-full rounded-2xl grayscale"
                 />
                 <p className="text-sm italic mt-4 text-center text-foreground/60">
-                  Traditional harvesting techniques preserved since the 1950s.
+                  Pengembangan lahan demplot kelapa kopyor sebagai pusat pembelajaran masyarakat.
                 </p>
               </div>
               <p>
-                Initially considered a "spoiled" fruit by those unfamiliar with its rarity, the local farmers soon
-                realized the unique culinary and cultural value of the Kopyor. It became a delicacy reserved for
-                community celebrations and a symbol of nature's unexpected gifts.
+                Dengan komitmen untuk mengubah komoditas tradisional menjadi produk unggulan, desa ini mulai membangun identitasnya sebagai "Kampung Kopyor". Fokus utamanya bukan sekadar menanam, melainkan menciptakan ekosistem pertanian berkelanjutan yang dikelola secara kolektif oleh warga setempat.
               </p>
             </section>
 
             <section className="space-y-6">
-              <h2 className="font-serif text-3xl text-foreground">Cultivation and Mastery (1980s - 2000s)</h2>
+              <h2 className="font-serif text-3xl text-foreground">Inovasi Teknologi Kultur Embrio</h2>
               <p>
-                As the demand for Kopyor grew, the community of D'Semuten began to study the trees with scientific
-                curiosity combined with ancestral wisdom. They identified which soil conditions favored the Kopyor
-                mutation and began a systemic effort to protect these unique trees.
+                Loncatan besar terjadi saat Kampung Kopyor Semuten mulai mengadopsi teknologi modern melalui kolaborasi dengan Pusat Penelitian Kelapa Sawit (PPKS) Bogor. Melalui teknik Kultur Embrio, mereka berhasil mengatasi keterbatasan alamiah; jika pohon biasa hanya menghasilkan 20% buah kopyor, teknologi ini menjamin hasil panen kopyor hingga 100%.
               </p>
               <p>
-                This period marked the transition from accidental harvesting to intentional cultivation. The techniques
-                developed during these decades—such as specific irrigation patterns and natural pest management—remain
-                the cornerstone of our operations today.
+                Di atas lahan Tanah Kas Desa seluas 4 hektare, ratusan bibit unggul ditanam dengan sistem tumpangsari. Integrasi antara sains dan pertanian ini tidak hanya meningkatkan produktivitas, tetapi juga menempatkan Semuten sebagai pionir pusat bibit kelapa kopyor berkualitas tinggi di wilayah Yogyakarta.
               </p>
             </section>
 
             <section className="space-y-6">
-              <h2 className="font-serif text-3xl text-foreground">Modern Heritage (2010 - Present)</h2>
+              <h2 className="font-serif text-3xl text-foreground">Pemberdayaan & Masa Depan Eduwisata</h2>
               <p>
-                Today, Kampung Kelapa Kopyor D'Semuten stands as a testament to sustainable branding and cultural
-                preservation. We have successfully integrated modern agricultural technology while strictly adhering to
-                the organic and traditional practices of our forebears.
+                Saat ini, Kampung Kopyor Semuten telah berkembang menjadi destinasi eduwisata yang menarik minat pengunjung dari berbagai daerah. Melalui kreativitas Taruna Tani, kelapa kopyor kini hadir dalam bentuk produk olahan inovatif seperti minuman kaleng siap saji yang dipasarkan hingga ke objek wisata populer di Dlingo.
               </p>
               <p>
-                Our history is not just about a fruit; it is about the resilience of a community that saw beauty in a
-                mutation and turned it into a legacy that feeds both the soul and the economy of our village.
+                Kisah kami adalah tentang resiliensi petani muda yang berani berinovasi. Kampung Kopyor Semuten bukan sekadar tentang hasil bumi, melainkan tentang bagaimana teknologi, kolaborasi pemerintah, dan semangat pemuda dapat bersinergi membangun kedaulatan ekonomi desa yang membanggakan.
               </p>
             </section>
           </div>
