@@ -23,7 +23,7 @@ export default function HistoryPage() {
             </span>
           
             <p className="text-xl md:text-2xl font-serif italic text-foreground/60 leading-relaxed">
-              Menelusuri transformasi Kampung Kopyor Semuten dari potensi lokal menjadi pusat inovasi teknologi dan eduwisata di Bantul.
+              Menelusuri transformasi Kampung Kopyor Semuten dari potensi lokal menjadi pusat inovasi teknologi dan eduwisata di Dlingo, Bantul.
             </p>
           </header>
 
@@ -35,9 +35,9 @@ export default function HistoryPage() {
               </p>
               <div className="my-12">
                 <img
-                  src="/kampung-kopyor-semuten.jpg" 
+                  src="/Photoshoot/kkopyor3.jpg" 
                   alt="Budidaya Kelapa Kopyor Semuten"
-                  className="w-full rounded-2xl grayscale"
+                  className="w-full rounded-2xl"
                 />
                 <p className="text-sm italic mt-4 text-center text-foreground/60">
                   Pengembangan lahan demplot kelapa kopyor sebagai pusat pembelajaran masyarakat.
@@ -64,7 +64,7 @@ export default function HistoryPage() {
                 Saat ini, Kampung Kopyor Semuten telah berkembang menjadi destinasi eduwisata yang menarik minat pengunjung dari berbagai daerah. Melalui kreativitas Taruna Tani, kelapa kopyor kini hadir dalam bentuk produk olahan inovatif seperti minuman kaleng siap saji yang dipasarkan hingga ke objek wisata populer di Dlingo.
               </p>
               <p>
-                Kisah kami adalah tentang resiliensi petani muda yang berani berinovasi. Kampung Kopyor Semuten bukan sekadar tentang hasil bumi, melainkan tentang bagaimana teknologi, kolaborasi pemerintah, dan semangat pemuda dapat bersinergi membangun kedaulatan ekonomi desa yang membanggakan.
+                Inisiatif ini mencerminkan resiliensi petani muda dalam berinovasi. Kampung Kopyor Semuten bukan sekadar tentang hasil bumi, melainkan perwujudan nyata bagaimana teknologi, kolaborasi pemerintah, dan semangat pemuda bersinergi membangun kedaulatan ekonomi desa yang membanggakan.
               </p>
             </section>
           </div>

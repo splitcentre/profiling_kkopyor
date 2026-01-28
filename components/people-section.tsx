@@ -5,12 +5,12 @@ import { X } from "lucide-react"
 
 const team = [
   {
-    name: "Aris Wijaya",
-    role: "Innovation Lead",
-    bio: "Merging modern irrigation techniques with traditional organic farming methods.",
+    name: "Iwan Haryanto",
+    role: "Ketua Kelompok Tani Taruna Tani",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "/Photoshoot/iwan.jpg",
     fullProfile:
-      "Aris brings fresh perspectives to our plantation through innovative agronomic techniques. He seamlessly bridges traditional organic farming with modern irrigation systems, ensuring our methods are both time-honored and future-ready. His research has significantly improved yield quality while maintaining our environmental commitment.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iwan Haryanto has been leading the Taruna Tani farming group for over a decade, focusing on sustainable agriculture and community development. His innovative approaches have significantly improved crop yields while maintaining environmental integrity.",
   },
 ]
 
@@ -48,7 +48,7 @@ export function PeopleSection() {
 
             <div className="space-y-8">
               <div>
-                <p className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4">The Guardians</p>
+                <p className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4">Ketua</p>
                 <h2 className="font-serif text-5xl mb-2">{selectedPerson.name}</h2>
                 <p className="uppercase tracking-widest text-sm text-background/60 font-bold">{selectedPerson.role}</p>
               </div>

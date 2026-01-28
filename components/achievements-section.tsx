@@ -5,32 +5,18 @@ import { useState } from "react"
 
 const achievements = [
   {
-    title: "Eco-Certification 2024",
-    description: "Awarded for our 100% pesticide-free and sustainable irrigation model.",
-    icon: Leaf,
-    image: "/eco-certification-award-2024.jpg",
-    pdf: "/eco-certification-2024.pdf",
+    title: "Pemenang Lomba Penerapan Teknologi Tepat Guna (TTG) 2023",
+    description: "Memenangkan lomba TTG tingkat nasional dengan Pembuatan Produk olahan Virgin Coconut Oil.",
+    icon: Award,
+    image: "/Photoshoot/penghargaan1.png",
+    // pdf: "/eco-certification-2024.pdf",
   },
   {
-    title: "Global Export Award",
-    description: "Successfully bringing the taste of D'Semuten to five continents.",
-    icon: Globe,
+    title: "Perintis Lingkungan Tingkat Kabupaten",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: Leaf,
     image: "/global-export-award-certificate.jpg",
     pdf: "/global-export-award.pdf",
-  },
-  {
-    title: "Community Growth",
-    description: "Created over 200 sustainable jobs for the local Kampung families.",
-    icon: Award,
-    image: "/community-impact-award.jpg",
-    pdf: "/community-impact-award.pdf",
-  },
-  {
-    title: "Top Kopyor Quality",
-    description: "Consistently ranked as the highest grade Kopyor in the region.",
-    icon: Trophy,
-    image: "/quality-excellence-award.jpg",
-    pdf: "/quality-excellence-award.pdf",
   },
 ]
 
@@ -42,8 +28,8 @@ export function AchievementsSection() {
     <section id="achievements" className="py-24 md:py-40">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-24">
-          <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">Our Impact</span>
-          <h2 className="font-serif text-5xl md:text-7xl mb-8">Marking the Future.</h2>
+          <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">Prestasi</span>
+          <h2 className="font-serif text-5xl md:text-7xl mb-8">Peraihan dan Penghargaan.</h2>
         </div>
 
         {selectedAchievement !== null ? (
@@ -89,11 +75,11 @@ export function AchievementsSection() {
 
                 {/* Image View */}
                 {viewMode === "image" && (
-                  <div className="mb-8">
+                  <div className="mb-8 flex justify-center">
                     <img
                       src={achievements[selectedAchievement].image || "/placeholder.svg"}
                       alt={achievements[selectedAchievement].title}
-                      className="w-full h-96 object-cover rounded-2xl mb-8"
+                      className="w-80 h-96 object-cover rounded-2xl"
                     />
                   </div>
                 )}
@@ -123,25 +109,20 @@ export function AchievementsSection() {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {achievements.map((item, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setSelectedAchievement(idx)}
-                  className="text-left p-10 border border-foreground/10 rounded-3xl hover:bg-accent/10 transition-colors group cursor-pointer"
-                >
-                  <item.icon className="w-12 h-12 mb-8 text-primary group-hover:scale-110 transition-transform" />
-                  <h3 className="text-2xl font-serif mb-4">{item.title}</h3>
-                  <p className="text-foreground/70 leading-relaxed">{item.description}</p>
-                </button>
-              ))}
-            </div>
-
-            <div className="mt-24 p-12 bg-accent/20 rounded-[3rem] text-center">
-              <h3 className="font-serif text-4xl mb-6">Is your brand ready for the taste of heritage?</h3>
-              <button className="bg-foreground text-background px-12 py-5 rounded-full font-medium hover:bg-primary transition-colors uppercase tracking-widest text-sm shadow-xl">
-                Partner With Us
-              </button>
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
+                {achievements.map((item, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setSelectedAchievement(idx)}
+                    className="text-left p-10 border border-foreground/10 rounded-3xl hover:bg-accent/10 transition-colors group cursor-pointer"
+                  >
+                    <item.icon className="w-12 h-12 mb-8 text-primary group-hover:scale-110 transition-transform" />
+                    <h3 className="text-2xl font-serif mb-4">{item.title}</h3>
+                    <p className="text-foreground/70 leading-relaxed">{item.description}</p>
+                  </button>
+                ))}
+              </div>
             </div>
           </>
         )}

@@ -1,7 +1,9 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { ProductCarousel } from "@/components/product-carousel"
 import { ShoppingBag, ExternalLink } from "lucide-react"
 import Image from "next/image"
+
 
 const marketplaces = [
   {
@@ -45,6 +47,11 @@ export default function ProductsPage() {
             <p className="max-w-2xl mx-auto text-xl text-muted-foreground font-light leading-relaxed">
               Temukan produk resmi kami di berbagai marketplace Indonesia terkemuka.
             </p>
+          </div>
+
+          {/* Product Carousel */}
+          <div className="mb-20">
+            <ProductCarousel />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
