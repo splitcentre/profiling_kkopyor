@@ -20,15 +20,33 @@ const products: Product[] = [
   },
   {
     id: 2,
-    name: 'Pisang Rambak, Talas,& Sukun',
+    name: 'Rambak Pisang',
     description: 'Pure, refreshing natural coconut water',
-    image: '/product/pisangrambak.png',
+    image: '/product/rambakpisang.jpg',
   },
   {
     id: 3,
-    name: 'Virgin Coconut Oil',
+    name: 'Pathilo',
     description: 'Crispy, nutrient-rich coconut chips',
-    image: '/product/virgincoconutoil.jpg',
+    image: '/product/pathilo.jpg',
+  },
+    {
+    id: 4,
+    name: 'Kripik Talas',
+    description: 'Crispy, nutrient-rich coconut chips',
+    image: '/product/kripiktalas.jpg',
+  },
+  {
+    id: 5,
+    name: 'Stik Sukun',
+    description: 'Crispy, nutrient-rich coconut chips',
+    image: '/product/stiksukun.jpg',
+  },
+  {
+    id: 6,
+    name: 'Stik Talas',
+    description: 'Crispy, nutrient-rich coconut chips',
+    image: '/product/stiktalas.jpg',
   },
 ]
 
