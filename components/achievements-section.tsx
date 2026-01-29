@@ -29,7 +29,7 @@ export function AchievementsSection() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-24">
           <span className="uppercase tracking-[0.4em] text-xs font-bold text-primary mb-4 block">Prestasi</span>
-          <h2 className="font-serif text-5xl md:text-7xl mb-8">Peraihan dan Penghargaan.</h2>
+          <h2 className="font-serif text-5xl md:text-7xl mb-8">Peraihan, Penghargaan dan Sertifikasi.</h2>
         </div>
 
         {selectedAchievement !== null ? (
