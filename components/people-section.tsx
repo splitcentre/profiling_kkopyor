@@ -10,7 +10,7 @@ const team = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "/Photoshoot/iwan.jpg",
     fullProfile:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iwan Haryanto has been leading the Taruna Tani farming group for over a decade, focusing on sustainable agriculture and community development. His innovative approaches have significantly improved crop yields while maintaining environmental integrity.",
+      "Iwan Haryanto Merupakan ketua dari Kelompok Tani Taruna Tani yang telah memimpin berbagai inisiatif pertanian berkelanjutan di Kampung Kopyor. Iwan telah berhasil mengimplementasikan teknologi tepat guna yang meningkatkan produktivitas dan kesejahteraan petani lokal.",
   },
 ]
 
