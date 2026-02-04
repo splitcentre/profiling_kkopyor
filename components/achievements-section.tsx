@@ -13,10 +13,10 @@ const achievements = [
   },
   {
     title: "Perintis Lingkungan Tingkat Kabupaten",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Perintis Pemberdaya Lingkungan di Kabupaten Bantul.",
     icon: Leaf,
     image: "/global-export-award-certificate.jpg",
-    pdf: "/global-export-award.pdf",
+    // pdf: "/global-export-award.pdf",
   },
 ]
 

@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
@@ -72,6 +72,42 @@ export function Footer() {
                     Minggu: Tutup
                   </p>
                 </div>
+              </div>
+            </div>
+
+            {/* Social Media */}
+            <div className="pt-4 border-t border-primary-foreground/20">
+              <h3 className="font-medium text-lg mb-4">Follow Us</h3>
+              <div className="flex gap-6">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full hover:bg-primary-foreground/20 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full hover:bg-primary-foreground/20 transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://tiktok.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full hover:bg-primary-foreground/20 transition-colors"
+                  aria-label="TikTok"
+                >
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.89 2.89 0 0 1 5.1-1.81v-3.4a6.47 6.47 0 0 0-6.47 6.47 6.47 6.47 0 0 0 6.47 6.47 6.47 6.47 0 0 0 6.47-6.47V8.93a8.27 8.27 0 0 0 3.77 1.03V9.72a4.83 4.83 0 0 1-3.77-3.03z" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>

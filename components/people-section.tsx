@@ -7,7 +7,7 @@ const team = [
   {
     name: "Iwan Haryanto",
     role: "Ketua Kelompok Tani Taruna Tani",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    bio: "Inisiator Pembudidaya Kelapa Kopyor dan Berbagai Komoditas Pertanian Lainnya.",
     image: "/Photoshoot/iwan.jpg",
     fullProfile:
       "Iwan Haryanto Merupakan ketua dari Kelompok Tani Taruna Tani yang telah memimpin berbagai inisiatif pertanian berkelanjutan di Kampung Kopyor. Iwan telah berhasil mengimplementasikan teknologi tepat guna yang meningkatkan produktivitas dan kesejahteraan petani lokal.",
