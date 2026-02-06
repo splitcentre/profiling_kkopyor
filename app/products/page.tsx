@@ -16,7 +16,7 @@ const marketplaces = [
   {
     name: "Shopee",
     description: "Link untuk Official Shopee",
-    url: "https://shopee.co.id",
+    url: "https://id.shp.ee/UHPgPMf",
     color: "bg-[#FF9F8C]",
     logo: "/Logo/shopee.png",
   },

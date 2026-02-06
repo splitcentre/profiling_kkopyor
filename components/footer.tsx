@@ -40,8 +40,8 @@ export function Footer() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg mb-1">Phone</h3>
-                  <a href="tel:+62XXX" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                    +62 (XXX) XXX-XXXX
+                  <a href="tel:+628819729327" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    08819729327
                   </a>
                 </div>
               </div>
@@ -53,8 +53,8 @@ export function Footer() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg mb-1">Email</h3>
-                  <a href="mailto:hello@dsemuten.com" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                    hello@dsemuten.com
+                  <a href="mailto:kampungkopyordsemuten@gmail.com" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    kampungkopyordsemuten@gmail.com
                   </a>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export function Footer() {
               <h3 className="font-medium text-lg mb-4">Follow Us</h3>
               <div className="flex gap-6">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/demplot_kampungkopyor"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full hover:bg-primary-foreground/20 transition-colors"
@@ -89,7 +89,7 @@ export function Footer() {
                   <Instagram className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/profile.php?id=61587138938634"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full hover:bg-primary-foreground/20 transition-colors"
@@ -98,7 +98,7 @@ export function Footer() {
                   <Facebook className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://tiktok.com"
+                  href="https://www.tiktok.com/@kampungkopyorsemuten?_r=1&_t=ZS-93gc7ibsVB1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full hover:bg-primary-foreground/20 transition-colors"
