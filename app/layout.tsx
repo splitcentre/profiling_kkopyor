@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "D'Semuten",
-  description: "Site For Kmapung Kopyor Profile.",
+  description: "Situs Informasi Mengenai Kampung Kopyor.",
   icons: {
     icon: [
       {

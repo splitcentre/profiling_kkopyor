@@ -1,6 +1,6 @@
 "use client"
 
-import { Trophy, Globe, Award, Leaf, X, FileText } from "lucide-react"
+import { Trophy, Globe, Award, Leaf, X } from "lucide-react"
 import { useState } from "react"
 
 const achievements = [
@@ -16,13 +16,11 @@ const achievements = [
     description: "Perintis Pemberdaya Lingkungan di Kabupaten Bantul.",
     icon: Leaf,
     image: "/global-export-award-certificate.jpg",
-    // pdf: "/global-export-award.pdf",
   },
 ]
 
 export function AchievementsSection() {
   const [selectedAchievement, setSelectedAchievement] = useState<number | null>(null)
-  const [viewMode, setViewMode] = useState<"image" | "pdf">("image")
 
   return (
     <section id="achievements" className="py-24 md:py-40">
@@ -46,54 +44,14 @@ export function AchievementsSection() {
                 </button>
               </div>
               <div className="p-8">
-                {/* View Mode Toggle */}
-                <div className="flex gap-4 mb-8">
-                  <button
-                    onClick={() => setViewMode("image")}
-                    className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${
-                      viewMode === "image"
-                        ? "bg-primary text-background"
-                        : "bg-accent/20 text-foreground hover:bg-accent/40"
-                    }`}
-                  >
-                    View Image
-                  </button>
-                  {achievements[selectedAchievement].pdf && (
-                    <button
-                      onClick={() => setViewMode("pdf")}
-                      className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${
-                        viewMode === "pdf"
-                          ? "bg-primary text-background"
-                          : "bg-accent/20 text-foreground hover:bg-accent/40"
-                      }`}
-                    >
-                      <FileText className="w-4 h-4" />
-                      View Certificate
-                    </button>
-                  )}
-                </div>
-
                 {/* Image View */}
-                {viewMode === "image" && (
-                  <div className="mb-8 flex justify-center">
-                    <img
-                      src={achievements[selectedAchievement].image || "/placeholder.svg"}
-                      alt={achievements[selectedAchievement].title}
-                      className="w-80 h-96 object-cover rounded-2xl"
-                    />
-                  </div>
-                )}
-
-                {/* PDF View */}
-                {viewMode === "pdf" && achievements[selectedAchievement].pdf && (
-                  <div className="mb-8 bg-accent/10 rounded-2xl overflow-hidden">
-                    <iframe
-                      src={achievements[selectedAchievement].pdf}
-                      className="w-full h-96 border-0"
-                      title={`${achievements[selectedAchievement].title} Certificate`}
-                    />
-                  </div>
-                )}
+                <div className="mb-8 flex justify-center">
+                  <img
+                    src={achievements[selectedAchievement].image || "/placeholder.svg"}
+                    alt={achievements[selectedAchievement].title}
+                    className="w-80 h-96 object-cover rounded-2xl"
+                  />
+                </div>
 
                 <p className="text-lg text-foreground/70 leading-relaxed mb-6">
                   {achievements[selectedAchievement].description}
